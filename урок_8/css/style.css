@@ -1,0 +1,62 @@
+/* 
+body      - селектор по тегу        1
+.header    -  селектор по класу     10
+#about_me   - селектор по ID        100
+*/
+
+@import url('./_normalize.css');
+/* -------- Створення змінних--------- */
+:root {
+    --main-font-size: 18px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--main-font-size);
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.flex-block{
+    display: flex;
+    
+
+}
+
+.header {
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* #about_me  {
+    text-align: center;
+} */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.menu__link {
+    text-decoration: none;
+    color: #828282;
+}
+.menu__link:hover {
+    color: #070707;
+}
+
+.nav {
+    position: relative;
+}
+.nav::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #828282;
+}
